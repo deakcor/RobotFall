@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://graphisme/decors/ile.png" type="Texture" id=1]
+
+[node name="world" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 179, 28.1, 179, 29.6, 191, 33.6, 191, 35, 196, 39, 196, 42, 197.1, 63, 195.3, 63, 191.3, 72, 3, 72, 3, 66, 5.1, 66, 11.1, 59, 13.6, 59, 29.6, 53, 51, 53, 96, 54.9, 106, 51.5, 131.3, 31, 134.7, 31, 153, 28.3, 153, 26.9 )
